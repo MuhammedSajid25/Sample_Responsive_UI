@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    background-color: wheat;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: all 0.7s ease;
+}
+
+a:hover {
+    background-color: black;
+    color: wheat;
+}
+
+@media screen and (max-width: 768px) {
+    /* We will apply the below rules only to those screens which have atmost 760px width */
+    header {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 570px) {
+
+    header {
+        display: block;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    ul li {
+        width: 100%;
+        margin: 5px;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+    }
+
+
+}
